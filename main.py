@@ -29,12 +29,12 @@ def find_mismatch(text):
 
 def main():
     choice = input()
-    if choice == 'F':
+    if choice.__contains__('F'):
         test = input()
         with open('test/' + test) as file:
             text = file.read().replace("\n", "")
         file.close()
-    elif choice == 'I':
+    elif choice.__contains__('I'):
         text = input()
     else:
         print("Please input F or I")
